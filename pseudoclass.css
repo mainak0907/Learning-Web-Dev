@@ -1,0 +1,30 @@
+a:link{
+    color: green;
+}
+a:visited{
+    color: grey;
+}
+a:hover{
+    color: tomato;
+}
+a:active{
+    color: yellow;
+}
+button:hover{
+    background-color: lightblue;
+}
+button:active{
+    background-color: white;
+}
+li:nth-child(odd){
+    background-color: rgb(255, 0, 221);
+}
+li:nth-child(3n){
+    background-color: yellow;
+}
+h1:hover{
+    text-shadow:0px 0px 5px yellow ;
+}
+h1{
+    box-shadow: 5px 5px 0px black;
+}

@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+h1{
+    color:aliceblue
+}
+p{
+    background-color: darkgray;
+    color: azure;
+} 
+#p1{ /*accessing by id*/
+    color: blueviolet;
+}
+.odd{ /*accessing by class*/
+    color: blue;
+}
+.even{
+    color: red;
+}

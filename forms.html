@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="space.css">
+</head>
+<body>
+    <main>
+        <form action="action_page.php" method="POST">
+            <div>
+            <label for="fname">First Name</label>
+            <input name="fname" type="text" id="fname" placeholder="Your First NAME" required>
+            </div>
+            <br>
+            <div>
+            <label for="lname">Last Name</label>
+            <input name="lname" type="text" id="lname" placeholder="Your Last NAME" required>
+            </div>
+            <br>
+        <div>
+        <label for="pass">Password</label>
+        <input name="pass" type="password" id="pass" placeholder="password" required maxlength="12">
+        </div> 
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input name="Email" type="email" id="email" placeholder="your email" required>
+
+            </div> 
+        <br>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input name="phone" type="tel" id="phone" placeholder="+xx-xxxxxxxxxx" required>
+                </div> 
+        <br>
+        <div>
+            <label for="bdate">Birth Date</label>
+                <input name="bdate" type="date" id="bdate" placeholder="xx/xx/xxxx" required>
+        </div> 
+        <br>
+        <div>
+            <label for="quantity">Quantity</label>
+                <input name="quantity" type="number" id="quantity" required min="0" max="99">
+        </div>
+         <br>
+         <div>
+            <label for="title">Title</label>
+            <label>Mr.</label>
+            <input type="radio" name="title">
+            <label>Mrs.</label>
+            <input type="radio" name="title">
+            <label>Dr.</label>
+            <input type="radio" name="title">
+         </div>  
+         <br> 
+         <div>
+         <label for="payment">Payment Option</label>
+         <select id="payment" name="payment">
+            <option value="Visa">Visa</option>
+            <option value="Master Card">Master Card</option>
+            <option value="Gift Card">Gift Card</option>
+            <option value="Theft">Theft</option>
+         </select>
+         </div>
+         <br>
+         <div>
+         <label for="subscribe">Subscribe</label>
+         <input type="checkbox" id="subscribe" name="subscribe">
+         </div>
+         <br>
+         <div>
+         <label for="textarea"> Text Area</label>
+         <textarea id="textarea" name="textarea" cols="30" rows="15"></textarea>
+         </div>
+         <br>
+         <div>
+         <label for="file">Upload your File</label>
+         <input id="file" name="file" type="file" accept="image/*" multiple>
+        </div>
+         <br>
+        <div>
+            <input type="reset">
+        </div>
+          <button> Sign Up</button>
+        </form>
+    </main>
+</body>
+</html>

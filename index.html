@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head> 
+    <title> This is the title of the web page</title>
+    <meta charset="UTF-8">
+    <!-- The head contains information that is not to be displayed to the user but is used for the browser to know-->
+    <!-- <script src="path to JS file"> is used to link javascript fles-->
+    <!-- <link> and <rel> is used to point to CSS files-->
+    <!-- NOTE - the order in which the tags are mentioned is important-->
+    </head>
+    <body>
+    <h1>This is the heading</h1>
+    <blockquote contenteditable="true">
+    <p lang="en"><q><b>This </b><i>is a paragraph</i><em> created by me</em> <strong> It is good</strong></q></p>
+    <cite>---Mainak</cite></blockquote> <!-- Blocquote is used to cite and quote from other sources , q is udes to fut quote symbols-->
+    <ol><li>1 st </li>
+    <li>2 st </li>
+    </ol><!--em and i have the same effect but for screen readers its different and same in case of b and strong-->
+   <dl> <!--Defination list -->
+    <dt><H3>TERM</H3></dt>
+    <dd>DEFINATION</dd>
+   </dl>
+   <time datetime="2022-10-22T17:32">Oct 22,2022 at 17:32</time>
+<!-- datetime is for machine readability -->
+<code contenteditable="true">import java.util.*</code><br>
+<code>HTML tags can be displayed as &lt;h4&gt;</code>
+<p>
+When<br>
+there<br>
+is<br>
+a<br>
+line<br>
+break</p>
+<pre>
+    hello    
+             this is 
+                              uneven spacing 
+    pre tag just takes the spacing in the code
+</pre>
+H<sub>2</sub>O <br>
+5<sup>10</sup>
+<pre>
+<small> The thing has little importance</small>
+</pre>
+<!--Attributes in HTML are used inside the opening tags , There are some attributes which can be used with specific tags only , but
+there are certain attributes that can be used with every tags 
+class="" - this is used to apply some changes in CSS or JS to all the objects of the same class
+id="" - this used to apply some changes in CSS , JS to only a particular element
+contenteditable="true" - this is used to make the user edit the content on the webpage but the changes are not stored and are erased as soon as the site is reloaded
+lang="en" - this is used to specify the language of the content 
+dir="rtl or ltr" - This is used to specify the direction in which the script is read
+
+ARIA roles provide semantic meaning to content,
+allowing screen readers and other tools to present and support interaction with object in a way that is consistent with user expectations of that type of object.
+ARIA roles can be used to describe elements that don't natively exist in HTML or exist but don't yet have full browser support.
+-->
+<!--The browser in most cases ignore the extra white spaces-->
+<!-- &amp; &trade; &copy ;&star are the special characters that are not there on keyboard
+&nbsp; is for non breaking space -->   
+<a href="https://www.wikipedia.org/"> click this</a> <!-- This a is a anchor tag which is used to bind URLs , this a 
+inline tag and can be used to wrap other elements leran more abt relative and absolute URLs -->
+<!--Navigation-->
+<nav role="navigation" aria-label="main menu">
+    <ul class="navbar">
+        <li><a href="/">Home</a></li>
+        <li><a href="/people">People</a></li>
+        <li><a href="/prices">Prices</a></li>
+        <li><a href="/contacts">Contact</a></li>
+    </ul>
+</nav>
+<!--Footer of the page-->
+<footer>
+    <a href="/about/privacy">Privacy Policy</a> <br>
+    <a href="/about/legal">Terms of Service</a>
+</footer>
+<img src="/image.jpg" width="300" height="300" alt="test picture">
+<!-- The main aim is to store as much as data possible in a small file size
+Use SVG(Scalable Vector Graphics) format if possible -->
+<!--To use responsive image based on display quality(pixel density) , create multiple resolution copy of the image 
+and add the attribute srcset="url 2x,url 3x,url 4x"-->
+<!--Responsive image based on viewport width
+add the attribute srcset="url 480w,url 960w,url 1440w,url 1920w"-->
+<!--if we want to display a cropped version of a picture for a screen size less than a particular value and a full picture for size above that-->
+<picture>
+    <source media="(min-width:600px )" srcset="url of full image">
+    <source srcset="url of the cropped image">
+    <img src="/image.jpg" width="300" height="300" alt="test picture">
+</picture>
+<!--If we want to use a caption combined with an image-->
+<figure>
+    <img src="/image.jpg" width="300" height="300" alt="test picture">
+    <figcaption>This is the caption</figcaption>
+</figure>
+<audio controls src="/Recording.m4a" loop autoplay>
+</audio>
+<!-- note the same thing can be done with audio as images
+<audio>
+  <source src="audio format 1" type="audio/format">
+  <source src="audio format 2" type="audio/format">
+  Sorry your browser does not support the audio format
+</audio>
+-->
+<video controls >
+    <source src="/WIN_20221228_09_14_44_Pro.mp4" type="video/mp4">
+    <track src="/random.vtt" kind="captions" label="English" srclang="en" default>
+</video>
+<!--H.264 codec is used to compressed vid-->
+<!--AV1 is a better codec than H.264 and is free-->
+<!--make the video as compressed as possible-->
+<!--video hosting services like netflix , other OTT have Adaptive Bit Rate Streaming, which is used to adjust the vid quality based on user device and network connection -->
+<!--embedding is placing the content from one site into the body of a page on another site-->
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sSbnlJhZ-EU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<!--Genereic elements are used to create custom html tags which do not have exist by default, this is done to target some part of the DOM-->
+<!--<div> and <span> are the generic elements -->
+<!-- div is a bock level tag while span is a inline tag , both do the same function-->
+</body>
+</html>
